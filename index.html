@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajeev Swami — Django Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Rajeev Swami, Aspiring Python Django Full-Stack Developer"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <!-- BACK TO TOP -->
+  <button id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="nav">
+    <div class="nav-wrap">
+      <a href="#hero" class="nav-logo">RS<span>.</span></a>
+      <ul class="nav-links" id="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hbg" id="hbg" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="hero-wrap">
+
+      <!-- Left: Text -->
+      <div class="hero-inner">
+        <p class="hero-hey reveal">&#128075; Hello, I'm</p>
+        <h1 class="hero-name reveal">Rajeev Swami</h1>
+        <h2 class="hero-role reveal">
+          <span class="role-pre">I'm a </span>
+          <span class="typed-text" id="typed"></span><span class="cur">|</span>
+        </h2>
+        <p class="hero-desc reveal">
+          I build scalable web applications and REST APIs using Django and modern web technologies.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-p"><i class="fas fa-code"></i> View Projects</a>
+          <a href="#contact"  class="btn btn-o"><i class="fas fa-envelope"></i> Contact Me</a>
+          <a href="assets/resume/Rajeev_Swami_Resume.pdf" download="Rajeev_Swami_Resume.pdf" class="btn btn-resume" id="download-resume">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://github.com/Rajeevswami" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rajeev-swami-ba63a3301" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:rajeevswami056@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Photo Circle -->
+      <div class="photo-block">
+        <div class="deco1"></div>
+        <div class="deco2"></div>
+        <div class="photo-frame">
+          <div class="photo-ring"><div class="photo-ring-inner"></div></div>
+          <img class="photo-img" src="assets/img/photo.jpg" alt="Rajeev Swami"/>
+        </div>
+        <div class="photo-badge">
+          <div class="dot-live"></div>
+          <span>Open to Work</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">// 01. about me</div>
+      <h2 class="section-title reveal">Who Am I?</h2>
+      <div class="about-grid">
+
+        <div class="about-text reveal">
+          <p>
+            I am a <strong>Computer Science student</strong> at Anand International College of Engineering,
+            Jaipur with a strong interest in backend development. I enjoy building web applications,
+            solving problems, and learning new technologies.
+          </p>
+          <p>
+            My goal is to become a <strong>full-stack developer</strong> &mdash; someone who understands
+            both the server and the browser. I love working with Python and Django to create clean,
+            efficient, and scalable systems.
+          </p>
+          <p>
+            When I'm not coding, I explore new frameworks, contribute to personal projects, and
+            sharpen my problem-solving skills on coding platforms.
+          </p>
+          <div class="about-badges">
+            <span class="badge"><i class="fab fa-python"></i> Python</span>
+            <span class="badge"><i class="fas fa-server"></i> Django</span>
+            <span class="badge"><i class="fas fa-database"></i> PostgreSQL</span>
+            <span class="badge"><i class="fas fa-code-branch"></i> Git</span>
+          </div>
+        </div>
+
+        <!-- Terminal Card -->
+        <div class="term-card reveal">
+          <div class="term-bar">
+            <span class="td r"></span>
+            <span class="td y"></span>
+            <span class="td g"></span>
+            <span class="term-ttl">dev_profile.py</span>
+          </div>
+          <div class="term-body">
+            <span class="tline"><span class="tp">&#10095;</span> <span class="tc">cat about.py</span></span>
+            <span class="tline tcm"># Developer Profile</span>
+            <span class="tline"><span class="tk">class</span> <span class="ta">Developer</span>:</span>
+            <span class="tline tind"><span class="tk">name</span><span class="te">=</span><span class="ts">"Rajeev Swami"</span></span>
+            <span class="tline tind"><span class="tk">role</span><span class="te">=</span><span class="ts">"Django Full Stack Dev"</span></span>
+            <span class="tline tind"><span class="tk">college</span><span class="te">=</span><span class="ts">"AICE Jaipur"</span></span>
+            <span class="tline">&nbsp;</span>
+            <span class="tline tind"><span class="tk">stack</span><span class="te">=</span><span class="tbr">[</span></span>
+            <span class="tline ti2"><span class="ts">"Python"</span><span class="tm">,</span></span>
+            <span class="tline ti2"><span class="ts">"Django"</span><span class="tm">,</span></span>
+            <span class="tline ti2"><span class="ts">"DRF"</span><span class="tm">,</span></span>
+            <span class="tline ti2"><span class="ts">"PostgreSQL"</span></span>
+            <span class="tline tind"><span class="tbr">]</span></span>
+            <span class="tline">&nbsp;</span>
+            <span class="tline tind"><span class="tk">available</span><span class="te">=</span><span class="tbool">True</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">// 02. skills</div>
+      <h2 class="section-title reveal">Tech Stack</h2>
+      <p class="section-sub reveal">Technologies I work with regularly</p>
+      <div class="skills-grid">
+
+        <div class="sk-cat reveal">
+          <div class="sk-head"><i class="fas fa-code"></i> Languages</div>
+          <div class="sk-bars">
+            <div class="sk-item">
+              <div class="sk-info"><span>Python</span><span>90%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="90"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>JavaScript</span><span>70%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="70"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>SQL</span><span>80%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-cat reveal">
+          <div class="sk-head"><i class="fas fa-layer-group"></i> Frameworks</div>
+          <div class="sk-bars">
+            <div class="sk-item">
+              <div class="sk-info"><span>Django</span><span>88%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="88"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>Django REST Framework</span><span>82%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-cat reveal">
+          <div class="sk-head"><i class="fas fa-palette"></i> Frontend</div>
+          <div class="sk-bars">
+            <div class="sk-item">
+              <div class="sk-info"><span>HTML</span><span>90%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="90"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>CSS</span><span>80%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>JavaScript</span><span>70%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-cat reveal">
+          <div class="sk-head"><i class="fas fa-database"></i> Database</div>
+          <div class="sk-bars">
+            <div class="sk-item">
+              <div class="sk-info"><span>PostgreSQL</span><span>80%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+            </div>
+            <div class="sk-item">
+              <div class="sk-info"><span>MySQL</span><span>72%</span></div>
+              <div class="sk-track"><div class="sk-fill" data-w="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-cat reveal full-col">
+          <div class="sk-head"><i class="fas fa-tools"></i> Tools</div>
+          <div class="tool-chips">
+            <span class="chip"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="chip"><i class="fab fa-github"></i> GitHub</span>
+            <span class="chip"><i class="fas fa-code"></i> VS Code</span>
+            <span class="chip"><i class="fab fa-docker"></i> Docker</span>
+            <span class="chip"><i class="fas fa-terminal"></i> Linux CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">// 03. projects</div>
+      <h2 class="section-title reveal">What I've Built</h2>
+      <p class="section-sub reveal">A selection of my recent work</p>
+      <div class="proj-grid">
+
+        <!-- Project 1 -->
+        <div class="proj-card reveal">
+          <svg class="proj-cover" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0d1f17"/>
+                <stop offset="100%" stop-color="#0d1117"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="160" fill="url(#pg1)"/>
+            <rect x="20" y="15" width="360" height="130" rx="8" fill="#111827" stroke="#1f2d42" stroke-width="1"/>
+            <rect x="20" y="15" width="360" height="28" rx="8" fill="#1a2233"/>
+            <rect x="20" y="31" width="360" height="12" fill="#1a2233"/>
+            <circle cx="36" cy="29" r="4.5" fill="#ff5f57"/>
+            <circle cx="51" cy="29" r="4.5" fill="#ffbd2e"/>
+            <circle cx="66" cy="29" r="4.5" fill="#28ca41"/>
+            <rect x="88" y="21" width="200" height="16" rx="4" fill="#111827"/>
+            <text x="188" y="33" font-family="monospace" font-size="9" fill="#4a5a70" text-anchor="middle">localhost:8000/blog/</text>
+            <rect x="35" y="54" width="330" height="18" rx="3" fill="#00c896" opacity=".1"/>
+            <text x="50" y="67" font-family="monospace" font-size="11" fill="#00c896" font-weight="bold">My Django Blog</text>
+            <rect x="35" y="79" width="220" height="6" rx="2" fill="#1f2d42"/>
+            <rect x="35" y="90" width="260" height="5" rx="2" fill="#1a2233"/>
+            <rect x="35" y="100" width="180" height="5" rx="2" fill="#1a2233"/>
+            <rect x="285" y="79" width="65" height="28" rx="5" fill="#00c896" opacity=".2" stroke="#00c896" stroke-width=".5" stroke-opacity=".4"/>
+            <text x="317" y="97" font-family="monospace" font-size="8" fill="#00c896" text-anchor="middle">Read More</text>
+            <rect x="35" y="116" width="48" height="12" rx="6" fill="#4f8ef7" opacity=".25"/>
+            <text x="59" y="126" font-family="monospace" font-size="7" fill="#4f8ef7" text-anchor="middle">Django</text>
+            <rect x="89" y="116" width="32" height="12" rx="6" fill="#4f8ef7" opacity=".25"/>
+            <text x="105" y="126" font-family="monospace" font-size="7" fill="#4f8ef7" text-anchor="middle">Auth</text>
+            <rect x="127" y="116" width="34" height="12" rx="6" fill="#4f8ef7" opacity=".25"/>
+            <text x="144" y="126" font-family="monospace" font-size="7" fill="#4f8ef7" text-anchor="middle">CRUD</text>
+          </svg>
+          <div class="proj-body">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-blog"></i></div>
+              <div class="proj-btns">
+                <a href="https://github.com/Rajeevswami" target="_blank" class="pbt">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" target="_blank" class="pbt live">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+            <h3 class="proj-title">Blog Web Application</h3>
+            <p class="proj-desc">A full-stack blog app with user authentication, CRUD operations for posts and comments, category filtering, and fully responsive design.</p>
+            <div class="proj-tech">
+              <span class="ttag">Django</span>
+              <span class="ttag">HTML</span>
+              <span class="ttag">CSS</span>
+              <span class="ttag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card reveal">
+          <svg class="proj-cover" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0d1520"/>
+                <stop offset="100%" stop-color="#0a0d14"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="160" fill="url(#pg2)"/>
+            <rect x="20" y="12" width="360" height="136" rx="8" fill="#111827" stroke="#1f2d42" stroke-width="1"/>
+            <rect x="20" y="12" width="360" height="26" rx="8" fill="#1a2233"/>
+            <rect x="20" y="26" width="360" height="12" fill="#1a2233"/>
+            <text x="200" y="29" font-family="monospace" font-size="8" fill="#4a5a70" text-anchor="middle">Task Manager API — Swagger UI</text>
+            <rect x="30" y="46" width="36" height="13" rx="3" fill="#28ca41" opacity=".9"/>
+            <text x="48" y="56" font-family="monospace" font-size="8" fill="#000" font-weight="bold" text-anchor="middle">GET</text>
+            <rect x="72" y="46" width="155" height="13" rx="2" fill="#1a2233"/>
+            <text x="78" y="56" font-family="monospace" font-size="8" fill="#94a3b8">/api/tasks/</text>
+            <rect x="30" y="64" width="40" height="13" rx="3" fill="#4f8ef7" opacity=".9"/>
+            <text x="50" y="74" font-family="monospace" font-size="8" fill="#fff" font-weight="bold" text-anchor="middle">POST</text>
+            <rect x="76" y="64" width="155" height="13" rx="2" fill="#1a2233"/>
+            <text x="82" y="74" font-family="monospace" font-size="8" fill="#94a3b8">/api/tasks/create/</text>
+            <rect x="30" y="82" width="44" height="13" rx="3" fill="#f97c3c" opacity=".9"/>
+            <text x="52" y="92" font-family="monospace" font-size="8" fill="#fff" font-weight="bold" text-anchor="middle">PATCH</text>
+            <rect x="80" y="82" width="155" height="13" rx="2" fill="#1a2233"/>
+            <text x="86" y="92" font-family="monospace" font-size="8" fill="#94a3b8">/api/tasks/{id}/</text>
+            <rect x="30" y="100" width="46" height="13" rx="3" fill="#ff5f57" opacity=".9"/>
+            <text x="53" y="110" font-family="monospace" font-size="8" fill="#fff" font-weight="bold" text-anchor="middle">DELETE</text>
+            <rect x="82" y="100" width="155" height="13" rx="2" fill="#1a2233"/>
+            <text x="88" y="110" font-family="monospace" font-size="8" fill="#94a3b8">/api/tasks/{id}/</text>
+            <rect x="278" y="46" width="88" height="72" rx="6" fill="#1a2233" stroke="#1f2d42" stroke-width="1"/>
+            <text x="322" y="64" font-family="monospace" font-size="8" fill="#00c896" text-anchor="middle">JWT Auth</text>
+            <rect x="288" y="70" width="62" height="4" rx="2" fill="#00c896" opacity=".3"/>
+            <rect x="288" y="78" width="48" height="4" rx="2" fill="#1f2d42"/>
+            <rect x="288" y="86" width="52" height="4" rx="2" fill="#1f2d42"/>
+            <text x="322" y="108" font-family="monospace" font-size="7" fill="#4f8ef7" text-anchor="middle">PostgreSQL</text>
+          </svg>
+          <div class="proj-body">
+            <div class="proj-header">
+              <div class="proj-icon"><i class="fas fa-tasks"></i></div>
+              <div class="proj-btns">
+                <a href="https://github.com/Rajeevswami" target="_blank" class="pbt">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" target="_blank" class="pbt live">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+            <h3 class="proj-title">Task Manager API</h3>
+            <p class="proj-desc">A RESTful API for task management with full CRUD, token-based authentication, status filtering, and auto-generated Swagger documentation.</p>
+            <div class="proj-tech">
+              <span class="ttag">DRF</span>
+              <span class="ttag">PostgreSQL</span>
+              <span class="ttag">JWT Auth</span>
+              <span class="ttag">Swagger</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label reveal">// 04. education &amp; certs</div>
+      <h2 class="section-title reveal">Learning Journey</h2>
+      <div class="edu-grid">
+
+        <div class="reveal">
+          <h3 class="edu-head"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <h4>B.Tech in Computer Science Engineering</h4>
+              <p class="tl-inst">Anand International College of Engineering, Jaipur</p>
+              <p class="tl-yr">2021 &ndash; 2025 (Expected)</p>
+              <p class="tl-desc">Focused on software engineering, data structures, algorithms, database systems, and web development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="edu-head"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="c-icon"><i class="fab fa-python"></i></div>
+              <div class="c-info"><h4>Python Programming</h4><p>Coursera</p></div>
+              <span class="cbadge">Certified</span>
+            </div>
+            <div class="cert-item">
+              <div class="c-icon"><i class="fas fa-database"></i></div>
+              <div class="c-info"><h4>SQL Bootcamp</h4><p>LetsUpgrade</p></div>
+              <span class="cbadge">Certified</span>
+            </div>
+            <div class="cert-item">
+              <div class="c-icon"><i class="fas fa-server"></i></div>
+              <div class="c-info"><h4>Django Web Development</h4><p>Udemy</p></div>
+              <span class="cbadge">Certified</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">// 05. contact</div>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-sub reveal">Have a project or opportunity? Let's talk.</p>
+      <div class="contact-grid">
+
+        <div class="contact-links reveal">
+          <div class="ci">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-text">
+              <span class="ci-label">Email</span>
+              <a href="mailto:rajeevswami056@gmail.com">rajeevswami056@gmail.com</a>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div class="ci-text">
+              <span class="ci-label">Phone</span>
+              <a href="tel:+917073574211">+91-7073574211</a>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="ci-text">
+              <span class="ci-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/rajeev-swami-ba63a3301" target="_blank">linkedin.com/in/rajeev-swami</a>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon"><i class="fab fa-github"></i></div>
+            <div class="ci-text">
+              <span class="ci-label">GitHub</span>
+              <a href="https://github.com/Rajeevswami" target="_blank">github.com/Rajeevswami</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="cf" novalidate>
+          <div class="fg">
+            <label for="uname">Name</label>
+            <input type="text" id="uname" placeholder="Your full name" required/>
+            <span class="ferr" id="nerr"></span>
+          </div>
+          <div class="fg">
+            <label for="uemail">Email</label>
+            <input type="email" id="uemail" placeholder="your@email.com" required/>
+            <span class="ferr" id="eerr"></span>
+          </div>
+          <div class="fg">
+            <label for="umsg">Message</label>
+            <textarea id="umsg" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="ferr" id="merr"></span>
+          </div>
+          <button type="submit" class="btn btn-p btn-full" id="cf-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="fsuccess" id="fsuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+          <div class="ferror-msg" id="fsenderror" style="display:none">
+            <i class="fas fa-exclamation-circle"></i> Failed to send. Please email me directly at rajeevswami056@gmail.com
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="foot-inner">
+        <div class="foot-logo">RS<span>.</span></div>
+        <p class="foot-tag">Building the web, one commit at a time.</p>
+        <div class="foot-socials">
+          <a href="https://github.com/Rajeevswami" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rajeev-swami-ba63a3301" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:rajeevswami056@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="foot-copy">&copy; 2025 Rajeev Swami &mdash; Anand International College of Engineering, Jaipur</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
